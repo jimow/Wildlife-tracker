@@ -1,5 +1,6 @@
+import appclass.*;
 import static spark.Spark.*;
-import models.*;
+
 import spark.template.handlebars.HandlebarsTemplateEngine;
 import spark.ModelAndView;
 import java.util.HashMap;
@@ -8,29 +9,28 @@ import java.util.Map;
 
 public class App {
     public static void main(String[] args) {
-        staticFileLocation("/public");
+       // staticFileLocation("/public");
         ProcessBuilder process = new ProcessBuilder();
         int port;
 
         if (process.environment().get("PORT") != null) {
             port = Integer.parseInt(process.environment().get("PORT"));
         } else {
-            port = 4567;
+            port = 4569;
         }
         port(port);
-
 
         //get: Homepage
         get("/",(request, response) -> {
             Map<String, Object> model = new HashMap<>();
             List<Sighting> allSightings = Sighting.all();
-            List<Animal> allanimal = NotEndangered.all();
-            System.out.println(allanimal);
-           // model.put("sightings", allSightings);
-           // return new ModelAndView(model,"index.hbs");
+            List<Animal> allAnimals = Animal.getAnimalNames();
+           System.out.println(allAnimals);
+           model.put("sightings", allSightings);
+           return new ModelAndView(model,"index.hbs");
         },new HandlebarsTemplateEngine());
 
-        //get: retrieve endangered animals
+      /*  //get: retrieve endangered animals
         get("/animals/endangered",(request, response) -> {
             Map<String, Object> model = new HashMap<>();
             model.put("endangered", EndangeredAnimal.all());
@@ -40,7 +40,7 @@ public class App {
         //get: retrieve non-endangered animals
         get("/animals/not-endangered",(request, response) -> {
             Map<String, Object> model = new HashMap<>();
-            model.put("normal", NormalAnimal.all());
+            model.put("normal", NotEndangered.all());
             return new ModelAndView(model,"animals-normal.hbs");
         },new HandlebarsTemplateEngine());
 
@@ -71,9 +71,9 @@ public class App {
                 newSighting.save();
             }
             else{
-                NormalAnimal normalAnimal = new NormalAnimal(animalName,animalHealth,animalAge);
-                normalAnimal.save();
-                Sighting newSighting = new Sighting(normalAnimal.getName(),location,newRanger.getId());
+                NotEndangered NotEndangered = new NotEndangered(animalName,animalHealth,animalAge);
+                NotEndangered.save();
+                Sighting newSighting = new Sighting(NotEndangered.getName(),location,newRanger.getId());
                 newSighting.save();
             }
             return new ModelAndView(model,"success.hbs");
@@ -141,14 +141,14 @@ public class App {
                 newSighting.save();
             }
             else{
-                NormalAnimal normalAnimal = new NormalAnimal(animalName,animalHealth,animalAge);
-                normalAnimal.save();
-                Sighting newSighting = new Sighting(normalAnimal.getName(),location,specificRanger.getId());
+                NotEndangered NotEndangered = new NotEndangered(animalName,animalHealth,animalAge);
+                NotEndangered.save();
+                Sighting newSighting = new Sighting(NotEndangered.getName(),location,specificRanger.getId());
                 newSighting.save();
             }
 
             return new ModelAndView(model,"success.hbs");
         },new HandlebarsTemplateEngine());
-
+*/
     }
 }

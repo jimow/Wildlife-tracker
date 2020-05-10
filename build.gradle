@@ -1,11 +1,11 @@
 plugins {
-    id 'groovy'
+    id 'application'
     id 'java'
 }
 
 
 
-
+mainClassName = 'App'
 group 'org.example'
 version '1.0-SNAPSHOT'
 

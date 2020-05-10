@@ -1,4 +1,4 @@
-package models;
+package appclass;
 import org.sql2o.*;
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -23,7 +23,7 @@ public class DB {
             String host = databaseUri.getHost();
             String path = databaseUri.getPath();
             String username = (databaseUri.getUserInfo() == null) ? "jamal" : databaseUri.getUserInfo().split(":")[0];
-            String password = (databaseUri.getUserInfo() == null) ? "00000000" : databaseUri.getUserInfo().split(":")[1];
+            String password = (databaseUri.getUserInfo() == null) ? "jamal" : databaseUri.getUserInfo().split(":")[1];
             sql2o = new Sql2o("jdbc:postgresql://" + host + ":" + port + path, username, password);
         } catch (URISyntaxException e){
             logger.error("unable to connect to database");

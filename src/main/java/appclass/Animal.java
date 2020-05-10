@@ -1,3 +1,4 @@
+package appclass;
 import org.sql2o.Connection;
 import org.sql2o.Sql2oException;
 import java.util.List;
@@ -5,8 +6,8 @@ import java.util.Objects;
 
 public abstract class Animal {
 
-    private String name;
-    private String age;
+    public String name;
+    public String age;
     public int id;
     public String health;
     public String type;
@@ -85,10 +86,10 @@ public abstract class Animal {
         }
     }
 
-    public static List<String> getAnimalNames(){
+    public static List<Animal> getAnimalNames(){
         try(Connection con = DB.sql2o.open()){
             return con.createQuery("SELECT name FROM animals")
-                    .executeAndFetch(String.class);
+                    .executeAndFetch(Animal.class);
         }
     }
 
