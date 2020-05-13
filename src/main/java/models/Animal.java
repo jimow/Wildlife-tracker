@@ -1,32 +1,29 @@
-package appclass;
+package models;
+
 import org.sql2o.Connection;
 import org.sql2o.Sql2oException;
+
 import java.util.List;
 import java.util.Objects;
 
+@SuppressWarnings("ALL")
 public abstract class Animal {
-
-    public String name;
-    public String age;
     public int id;
+    public String name;
     public String health;
+    public String age;
     public String type;
 
-
-
-    public boolean equals(Object obj) {
-        if (this == obj) return true;
-
-        if (obj == null || getClass() != obj.getClass())
-            return false;
-        Animal animal = (Animal) obj;
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Animal animal = (Animal) o;
         return  Objects.equals(name, animal.name) &&
                 Objects.equals(health, animal.health) &&
                 Objects.equals(age, animal.age) &&
                 Objects.equals(type, animal.type);
     }
-
-    //getters & Setters
 
     @Override
     public int hashCode() {
@@ -69,8 +66,7 @@ public abstract class Animal {
         return type;
     }
 
-
-
+    /* ----------------- models.DB OPERATIONS ---------------- */
     public void save(){
         try(Connection con = DB.sql2o.open()) {
             String sql = "INSERT INTO animals(name,health, age, type) values (:name,:health,:age,:type)";
@@ -86,10 +82,10 @@ public abstract class Animal {
         }
     }
 
-    public static List<Animal> getAnimalNames(){
+    public static List<String> allAnimalNames(){
         try(Connection con = DB.sql2o.open()){
             return con.createQuery("SELECT name FROM animals")
-                    .executeAndFetch(Animal.class);
+                    .executeAndFetch(String.class);
         }
     }
 

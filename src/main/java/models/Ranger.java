@@ -1,4 +1,5 @@
-package appclass;
+package models;
+
 import org.sql2o.Connection;
 import org.sql2o.Sql2oException;
 
@@ -50,10 +51,10 @@ public class Ranger {
     }
 
     public static List<Ranger> all(){
-        try(Connection con = DB.sql2o.open()){
-            return con.createQuery("SELECT * FROM rangers")
-                    .executeAndFetch(Ranger.class);
-        }
+       try(Connection con = DB.sql2o.open()){
+           return con.createQuery("SELECT * FROM rangers")
+                   .executeAndFetch(Ranger.class);
+       }
     }
 
     public static Ranger find(int searchId){
@@ -75,8 +76,8 @@ public class Ranger {
 
     public void delete(){
         try(Connection con = DB.sql2o.open()){
-            con.createQuery("DELETE FROM rangers WHERE id=:id")
-                    .addParameter("id",this.id)
+             con.createQuery("DELETE FROM rangers WHERE id=:id")
+                     .addParameter("id",this.id)
                     .executeUpdate();
         }
     }

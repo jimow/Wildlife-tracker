@@ -1,43 +1,100 @@
-{{#block "header"}}
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <title>{{#block "title"}}Sacred Jungle{{/block}}</title>
-        <link href="https://fonts.googleapis.com/css?family=Mukta|Nunito|Poppins:500&display=swap" rel="stylesheet">
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-        <link rel='stylesheet' href='/app.css'>
-    </head>
-    <body>
-{{/block}}
-<!--begin main template-->
-<div class="container-fluid">
-    <nav class="navbar static-top navbar-expand-lg navbar-light bg-light">
-        <a href="/"><img src="/images/logo_nav.png" class="navbar-brand" alt="brand logo" id="brandLogo"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<!DOCTYPE html>
+<html lang="en">
 
-        <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                {{#block "navlinks"}}
-                {{/block}}
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Wildlife Tracker</title>
+    <meta content="" name="descriptison">
+    <meta content="" name="keywords">
+    <!-- Favicons -->
+    <link href="images/favicon.png" rel="icon">
+
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Template Main CSS File -->
+    <link href="style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+         <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+        <nav class="nav-menu d-none d-lg-block">
+            <ul>
+                <li class="active"><a href="/">Home</a></li>
+
+                <li class="drop-down"><a href="#">View Animals</a>
+                    <ul>
+                        <li><a href="/animals/endangered">Endangered</a></li>
+                        <li><a href="/animals/not-endangered">Not Endangered</a></li>
+
+                    </ul>
+                </li>
+
+                <li><a href="/rangers">Rangers</a></li>
+                <li><a href="/sightings">Sighting Locations</a></li>
+                <li><a href="/sighting/new">Register a sighting</a></li>
+
+
             </ul>
-        </div>
-    </nav>
+        </nav><!-- .nav-menu -->
 
-    {{#block "preContent"}}
-    {{/block}}
 
-    <div class="container" id="contentContainer">
-        {{#block "content"}}
-        {{/block}}
+
     </div>
+</header><!-- End Header -->
+
+<!-- ======= Hero Section ======= -->
+<section id="hero1">
+
+
+
+</section><!-- End Hero -->
+<hr />
+<hr />
+
+
+
+<div class="container">
+
+
+    <div class="row">
+
+        <div class="col-md-12">
+            {{#block "content"}}
+            {{/block}}
+        </div>
+    </div>
+
+
+
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+
+
+</footer><!-- End Footer -->
+
 </div>
-<!--end main template-->
-{{#block "footer"}}
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    </body>
-    </html>
-{{/block}}
+
+
+
+
+
+
+</body>
+
+</html>

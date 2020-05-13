@@ -1,4 +1,5 @@
-package appclass;
+package models;
+
 import org.sql2o.Connection;
 import java.util.List;
 

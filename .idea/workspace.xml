@@ -1,41 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a5b0c7e6-62a8-49c5-b617-21a88fa57efa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/App.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/appclass/Animal.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/appclass/DB.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/appclass/EndangeredAnimal.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/appclass/NotEndangered.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/appclass/Ranger.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/appclass/Sighting.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/templates/index.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/templates/layout.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layout.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4.1/fileContent/annotation-processors.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4.1/fileContent/annotation-processors.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/all-rangers.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/animals-endangered.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/animals-normal.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/new-sighting.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/ranger-details.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/sighting-location-details.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/sighting-locations.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/success.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/test.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4.1/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4.1/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4.1/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4.1/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4.1/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/workspace-id.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/workspace-id.txt.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appclass/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/appclass/Animal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/appclass/DB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/appclass/EndangeredAnimal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/appclass/NotEndangered.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/appclass/Ranger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/appclass/Sighting.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/index.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/layout.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/layout.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appclass/DB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/EndangeredAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appclass/EndangeredAnimal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/NotEndangered.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appclass/NotEndangered.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Ranger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appclass/Ranger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Sighting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appclass/Sighting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/appclass/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/appclass/DB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/DB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/appclass/EndangeredAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/EndangeredAnimal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/appclass/NotEndangered.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/NormalAnimal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/appclass/Ranger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Ranger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/appclass/Sighting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Sighting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/layout.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/layout.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +67,18 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -63,18 +96,18 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/main/resources/templates" />
+      <recent name="$PROJECT_DIR$/src/main/java/App" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java" />
       <recent name="$PROJECT_DIR$/src/main/java/App" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources/templates" />
-      <recent name="$PROJECT_DIR$/src/main/java/App" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -90,21 +123,53 @@
       <workItem from="1589107209257" duration="3250000" />
       <workItem from="1589110533972" duration="382000" />
       <workItem from="1589111029706" duration="5827000" />
+      <workItem from="1589337587085" duration="34000" />
+      <workItem from="1589337763394" duration="200000" />
+      <workItem from="1589338236787" duration="1119000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="67" y="171" width="424" height="484" key="FileChooserDialogImpl" timestamp="1589337958615">
+      <screen x="67" y="27" width="1213" height="628" />
+    </state>
+    <state x="67" y="171" width="424" height="484" key="FileChooserDialogImpl/67.27.1213.628@67.27.1213.628" timestamp="1589337958615" />
+    <state x="197" y="127" width="983" height="242" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1589339319505">
+      <screen x="67" y="27" width="1213" height="628" />
+    </state>
+    <state x="197" y="127" width="983" height="242" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/67.27.1213.628@67.27.1213.628" timestamp="1589339319505" />
+    <state x="197" y="127" width="983" height="242" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1589339057020">
+      <screen x="67" y="27" width="1213" height="628" />
+    </state>
+    <state x="197" y="127" width="983" height="242" key="com.intellij.history.integration.ui.views.FileHistoryDialog/67.27.1213.628@67.27.1213.628" timestamp="1589339057020" />
+    <state x="460" y="163" width="447" height="170" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589339056817">
+      <screen x="67" y="27" width="1213" height="628" />
+    </state>
+    <state x="460" y="163" width="447" height="170" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1213.628@67.27.1213.628" timestamp="1589339056817" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/App.java</url>
-          <line>69</line>
+          <line>70</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
